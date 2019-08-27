@@ -1,0 +1,28 @@
+<div class="panel panel-default widget">
+
+    <div class="panel-body">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-xs-10 col-md-11">
+                        <div>
+                            <div class="mic-info">
+                                 <a href="?user=<%=@post.user.id%>"> <%=@post.user.name%> </a> <%=@post.created_at%>
+                            </div>
+                        </div>
+                          
+                        <hr>
+                        <div class="action">
+                          <%= link_to '', @post, :method => :delete, data: {confirm: 'Eminmisin?',commit: 'Evet'},class:"glyphicon glyphicon-trash" %>
+                          <%= link_to '', edit_post_path(@post),class:"glyphicon glyphicon-pencil" %>
+                        </div>
+
+                       
+                        <%=render 'comments/form'%>
+
+                    </div>
+                  </div>
+            </li>
+        </ul>
+    </div>
+</div>
