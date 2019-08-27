@@ -22,7 +22,13 @@
 en:
   hello: "Hello world App"
   home: "Home Page"
-  signin: 'Sign in'
-  signup: 'Sign up'
+  login: '  Sign in'
+  signup: '  Sign up'
   exit: 'Exit'
   settings: 'Settings'
+  jumbotronmiddle: 'My Ruby on rails project. You can send a post by clicking Add post.'
+  jumbotrontop: 'My Website'
+  about: 'Admin Panel'
+  newpost: 'New Post'
+  welcome: 'Welcome'
+  lang: "Select Language"

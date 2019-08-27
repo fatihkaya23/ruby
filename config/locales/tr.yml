@@ -1,7 +1,13 @@
 tr: 
     hello: 'Uygulamama hosgeldiniz!'
     home: 'Ana Sayfa'
-    signin: 'Oturum Aç'
-    signup: 'Üye Ol'
+    login: '  Giriş Yap'
+    signup: '  Üye Ol'
     exit: 'Çıkış'
     settings: 'Ayarlar'
+    jumbotronmiddle: 'Ruby on rails projem. Gönderi ekleye tıklayarak post gönderebilirsiniz.'
+    jumbotrontop: 'Web Sitem'
+    about: 'Admin Paneli'
+    newpost: 'Gönderi Ekle'
+    welcome: 'Hoşgeldiniz'
+    lang: "Dil Seçin"

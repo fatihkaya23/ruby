@@ -6,25 +6,29 @@
                     <ul class="list-group">
                         <li class="list-group-item">
                             <div class="row">
-                                <div class="col-xs-10 col-md-11">
+                                <div class="col-xs-9 col-md-9">
                                     <div>
                                         <div class="mic-info">
-                                             <a href="?user=<%=post.user.id%>"> <%=post.user.name%> </a>
+                                             <a href="?user=<%=post.user.id%>"> <h4><%=post.user.name%></h4> </a>
                                         </div>
                                     </div>
-                                    <%=post.created_at%>
+                                    
 
-                                    <div class="comment-text">
-                                        <%=post.title%> <br/>
-                                        <%=image_tag post.image.url(:medium),class:"img img-responsive" if post.image?%>
+                                    <h4 class="comment-text">
+                                        Başlık: <%=post.title%> <br/>
                                         <br/>
-                                        <%=post.msg%>
-                                    </div>
+                                        Mesaj: <%=post.msg%>
+                                    </h4>
+              
+                                    
+                                </div>
+                                <div class="col-xs-3 col-md-3 text-right">
+                                    
                                     <div class="action">
+                                        <%=post.created_at%>
                                       <%= link_to '', post, :method => :delete, data: {confirm: 'Eminmisin?',commit: 'Evet'},class:"glyphicon glyphicon-trash" %>
                                       <%= link_to '', edit_post_path(post),class:"glyphicon glyphicon-pencil" %>
                                     </div>
-                                    
                                 </div>
                             </div>
                         </li>

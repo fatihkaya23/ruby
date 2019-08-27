@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Uygulama</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <title>Fatih Kaya</title>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href="https://getbootstrap.com/docs/3.4/dist/css/bootstrap.min.css" rel="stylesheet">
+  
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-
-<%=render 'shared/navbar' %>
-<%= yield %>
-
+<div class="container" style="padding-top: 1rem;">
+    <%=render 'shared/navbar' %>
+    <%= yield %>
+    <%=render 'shared/footer' %>
+</div>
 </body>
 </html> 
